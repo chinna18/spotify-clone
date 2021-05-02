@@ -46,6 +46,7 @@ async function getPlayList(apitoken) {
       anchor.setAttribute('href',element.external_urls.spotify)
       anchor.setAttribute('target','_blank')
       var img = document.createElement('img');
+      img.setAttribute('class','img-fluid')
       img.setAttribute('src',element.images[0].url);
      img.setAttribute('style','height:500px;width:500px')
      anchor.append(img);
